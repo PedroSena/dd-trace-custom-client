@@ -1,3 +1,12 @@
 {
-  "packages_required": "int64-buffer koalas lodash msgpack-lite opentracing react-device-detect url-parse"
+  "name": "dd-trace-custom-client",
+  "version": "0.0.1",
+  "dependencies": {
+    "int64-buffer": "0.1.6",
+    "koalas": "1.0.2",
+    "lodash": "4.17.15",
+    "msgpack-lite": "0.1.26",
+    "opentracing": "0.14.4",
+    "url-parse": "1.4.7"
+  }
 }
