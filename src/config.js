@@ -23,7 +23,7 @@ class Config {
     this.debug = String(debug) === "true"
     this.service = service
     this.env = env
-    this.url = new URL(`${protocol}://${hostname}:${port}`)
+    this.url = coalesce(new URL(options.url), new URL(`${protocol}://${hostname}:${port}`)) 
     this.tags = Object.assign({}, options.tags)
     this.flushInterval = flushInterval
     this.bufferSize = 100000
