@@ -1,7 +1,7 @@
 "use strict"
 /* sumeet - http not vaialble in RN*/
-// const http = require('http')
-const http = require("../../../../react-native-http")
+const http = require('http')
+// const http = require("../../../../react-native-http")
 
 /* sumeet END */
 function request (options, callback) {

@@ -1,5 +1,4 @@
 "use strict"
-const apm_utils = require("../../../../utils/apm-utils")
 const platform = require("./platform")
 const log = require("./log")
 const format = require("./format")
@@ -83,10 +82,10 @@ class Writer {
       platform
         .request(Object.assign({data}, options))
         .then(res => {
-          log.debug(`Response from the dd-trace agent: status ${apm_utils.prettyPrint(res.status)} ok: ${apm_utils.prettyPrint(res.ok)} `)
+          log.debug(`Response from the dd-trace agent: status ${res.status} ok: ${res.ok} `)
         })
         .catch(e => {
-          log.error(`ERROR from the dd-trace agent:  ${apm_utils.prettyPrint(e)}`)
+          log.error(`ERROR from the dd-trace agent:  ${e}`)
         })
       this._queue = []
     }
