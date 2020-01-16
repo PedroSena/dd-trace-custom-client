@@ -50,7 +50,7 @@ class Writer {
         protocol: this._url.protocol,
         hostname: this._url.hostname,
         /* sumeet ensure 443 is appended - gets dropped in react!*/
-        //port: this._url.port ? this._url.port : (this._url.protocol == "https:" || this._url.protocol == "https" ? "443" : "80"),
+        port: this._url.port ? this._url.port : (this._url.protocol == "https:" || this._url.protocol == "https" ? "443" : "80"),
         path: "/proxy/datadog/v0.3/traces",
         method: "PUT",
         headers: {
